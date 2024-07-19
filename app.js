@@ -1,5 +1,9 @@
-document.getElementById('guestbook').addEventListener('submit', function(event) {
+    const guesbook = document.getElementById('guestbook');
+    const entries = document.getElementById('entries');
+
+    guestbook.addEventListener('submit', function(event) {
     event.preventDefault();
+
 
     const name = document.getElementById('name').value;
     const address = document.getElementById('address').value;
