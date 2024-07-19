@@ -8,7 +8,10 @@ document.getElementById('guestbook').addEventListener('submit', function(event) 
 
     const entry = document.createElement('div');
     entry.classList.add('entry');
-    entry.innerHTML = `<h3>${name}</h3><p>Address: ${address}</p><p>Mobile: ${mobile}</p><p>Room Number: ${roomnumber}</p>`;
+    entry.innerHTML = `<h3>${name}</h3>
+                       <p>Address: ${address}
+                       </p><p>Mobile: ${mobile}</p>
+                       <p>Room Number: ${roomnumber}</p>`;
 
     document.getElementById('entries').appendChild(entry);
 
